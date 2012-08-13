@@ -22,6 +22,9 @@ namespace InheritanceSample
 
             List<Vehicle> vehicles = new List<Vehicle> { honda, prelude, legacy, f150, };
             vehicles.ForEach(vehicle => vehicle.Start());
+
+            IEnumerable<Vehicle> onlyHondas = vehicles.Where(v => v.Make == "Honda");
+            System.Console.WriteLine("onlyHondas = " + string.Join(", ", onlyHondas));
         }
     }
 }
