@@ -19,7 +19,7 @@ namespace OldFeaturesAndTests
         {
             get { return _lastName; }
         }
-
+            
         public Person(string firstName = "John", string lastName = "Doe")
         {
             // TODO: Complete member initialization
