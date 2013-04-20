@@ -62,5 +62,14 @@ namespace UnitTestProject1
             Assert.AreEqual("Doe, John\nTheDog, Ted\nTheDog, Fred\nSchmoo, Joe\n", pretty);
         }
 
+        [TestMethod]
+        public void TestNicknames()
+        {
+            Person charles = new Person(firstName: "Charles", lastName: "Winchester");
+            Assert.AreEqual(0, charles.Nicknames.Count);
+
+
+        }
+
     }
 }
